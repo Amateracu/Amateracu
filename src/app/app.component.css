@@ -1,0 +1,33 @@
+h1 {
+  color: blueviolet;
+};
+h2 {
+   color:rgb(18, 18, 201);
+};
+.task-list {
+  color: aqua;
+  margin: auto;
+  background-color: blue;
+};
+
+.task {
+  color: red;
+  margin: 50px;
+  background-color: rgb(26, 26, 34);
+};
+.task-view {
+  margin-right: 50px;
+  color: bisque;
+  background-color: brown;
+};
+.change-view {
+  margin-top: 50px;
+  color: rgb(69, 126, 126);
+  background-color: blueviolet;
+};
+.delete-view {
+  margin-bottom: auto;
+  color: azure;
+  background-color: black;
+  margin-top: 50px
+};

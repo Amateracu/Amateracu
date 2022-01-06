@@ -7,4 +7,26 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'todo';
+  allItems: string[] = [];
+  item: string = '';
+  itemChanging: number = -1;
+  submitItem: string = '';
+  addItem() {
+    this.allItems.push(this.item);
+    this.item = '';
+  }
+  deleteItem(index: number) {
+    this.allItems.splice(index, 1);
+    console.log('index: ', index);
+  }
+  changingItem(index: number) {
+    this.itemChanging = index;
+    this.submitItem = this.allItems[index];
+
+  }
+  changeItem(index: number) {
+    this.allItems[index] = this.submitItem;
+    this.itemChanging = -1;
+    console.log('itemChanging: ', this.itemChanging);
+  }
 }
