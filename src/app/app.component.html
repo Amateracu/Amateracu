@@ -1,23 +1,24 @@
-<h1>
+<body>
+  <h1>
   TODO list
 </h1>
 <h2>Введите действие</h2>
-<input [(ngModel)]="item" type="text">
-<button (click)="addItem()">Добавить</button>
+<div class="mainInput">
+  <input [(ngModel)]="item" type="text">
+  <button (click)="addItem()">Добавить</button>
+</div>
 <div class="task-list">
   <div class="task" *ngFor="let item of allItems; let index = index">
-    <div class="task-view" *ngIf="!(itemChanging === index)">
-      <button (click)="changingItem(index)">Изменить</button>
-      <div>{{item}}</div>
+    <div class="task-name">
+      <input *ngIf="itemChanging === index" [(ngModel)]="submitItem" type="text">
+      <div *ngIf="!(itemChanging === index)">{{item}}</div>
     </div>
-    <div class="change-view" *ngIf="itemChanging === index">
-      <input [(ngModel)]="submitItem" type="text">
-      <button (click)="changeItem(index)">Сохранить</button>
-    </div>
-    <div class="delete-view">
+    <div class="buttons">
+      <button *ngIf="itemChanging === index" (click)="changeItem(index)">Сохранить</button>
+      <button *ngIf="!(itemChanging === index)" (click)="changingItem(index)">Изменить</button>
       <button (click)="deleteItem(index)">Удолить</button>
     </div>
-
   </div>
-
 </div>
+</body>
+

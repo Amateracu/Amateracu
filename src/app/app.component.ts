@@ -17,7 +17,6 @@ export class AppComponent {
   }
   deleteItem(index: number) {
     this.allItems.splice(index, 1);
-    console.log('index: ', index);
   }
   changingItem(index: number) {
     this.itemChanging = index;
@@ -27,6 +26,5 @@ export class AppComponent {
   changeItem(index: number) {
     this.allItems[index] = this.submitItem;
     this.itemChanging = -1;
-    console.log('itemChanging: ', this.itemChanging);
   }
 }
