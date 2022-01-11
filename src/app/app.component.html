@@ -1,7 +1,12 @@
 <body>
-  <h1>
-  TODO list
-</h1>
+  <div class="header">
+    <div class="headerText">
+      TODO list
+    </div>
+    <div class="colorButton" >
+      <button (click)="selectColor()">Color</button>
+    </div>
+  </div>
 <h2>Введите действие</h2>
 <div class="mainInput">
   <input [(ngModel)]="item" type="text">
@@ -11,7 +16,7 @@
   <div class="task" *ngFor="let item of allItems; let index = index">
     <div class="task-name">
       <input *ngIf="itemChanging === index" [(ngModel)]="submitItem" type="text">
-      <div *ngIf="!(itemChanging === index)">{{item}}</div>
+      <div class="item-name" *ngIf="!(itemChanging === index)">{{item}}</div>
     </div>
     <div class="buttons">
       <button *ngIf="itemChanging === index" (click)="changeItem(index)">Сохранить</button>

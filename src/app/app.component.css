@@ -1,8 +1,18 @@
-h1 {
-  text-align: center;
-  font-size: 50px;
+.header {
+  display: flex;
+  flex-direction: row;
   background-color: rgb(193, 223, 220);
   border-radius: 15px;
+  align-items: center;
+  padding: 10px;
+}
+.headerText {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  font-size: 30px;
+  font-weight: 800;
+
 }
 h2 {
   text-align: left;
@@ -72,7 +82,13 @@ input, textarea {
   flex-direction: row;
   column-gap: 10px;
 }
-
-
-
+.item-name {
+  font-size: 18px;
+  margin-left: 10px;
+}
+.colorButton {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
 
