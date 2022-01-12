@@ -1,29 +1,36 @@
-<body>
+<div [changeColor]="color">
   <div class="header">
-    <div class="headerText">
+    <div [changeColor]="color" class="header-text">
       TODO list
     </div>
-    <div class="colorButton" >
+    <div class="color-button" >
       <button (click)="selectColor()">Color</button>
     </div>
   </div>
-<h2>Введите действие</h2>
-<div class="mainInput">
-  <input [(ngModel)]="item" type="text">
-  <button (click)="addItem()">Добавить</button>
-</div>
-<div class="task-list">
-  <div class="task" *ngFor="let item of allItems; let index = index">
-    <div class="task-name">
-      <input *ngIf="itemChanging === index" [(ngModel)]="submitItem" type="text">
-      <div class="item-name" *ngIf="!(itemChanging === index)">{{item}}</div>
+  <h2 [changeColor]="color">
+    Введите действие
+  </h2>
+  <div class="main-input">
+    <div class="add-item">
+      <input [(ngModel)]="item" type="text">
+      <button (click)="addItem()">Добавить</button>
     </div>
-    <div class="buttons">
-      <button *ngIf="itemChanging === index" (click)="changeItem(index)">Сохранить</button>
-      <button *ngIf="!(itemChanging === index)" (click)="changingItem(index)">Изменить</button>
-      <button (click)="deleteItem(index)">Удолить</button>
+    <div class="hidding">
+      <button (click)="hideItem()">Скрыть</button>
+    </div>
+  </div>
+  <div *hide="hiding" class="task-list">
+    <div class="task" *ngFor="let item of allItems; let index = index">
+      <div class="task-name">
+        <input *ngIf="itemChanging === index" [(ngModel)]="submitItem" type="text">
+        <div class="item-name" *ngIf="!(itemChanging === index)">{{item | capitalize}}</div>
+      </div>
+      <div class="buttons">
+        <button *ngIf="itemChanging === index" (click)="changeItem(index)">Сохранить</button>
+        <button *ngIf="!(itemChanging === index)" (click)="changingItem(index)">Изменить</button>
+        <button (click)="deleteItem(index)">Удолить</button>
+      </div>
     </div>
   </div>
 </div>
-</body>
 
