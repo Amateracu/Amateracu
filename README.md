@@ -50,6 +50,10 @@
 
 <br/>
 
+### 💻 Codewars:
+
+![codewars](https://www.codewars.com/users/Amateracu/badges/large)
+
 ## Github Stats
 
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Amateracu&hide_border=true&layout=compact" align="left" style="width: 100%" />
