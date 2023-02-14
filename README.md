@@ -6,7 +6,7 @@
 
 - 🔭 I’m currently working on
 
-- 🌱I’m currently learning ChatGPT and Lodash
+- 🌱I’m currently learning Svelte and Sveltekit
 
 - ❓ Ask me about anything related to Angular stack and related technologies
 
