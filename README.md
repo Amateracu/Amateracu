@@ -2,7 +2,7 @@
 <img src="https://rishavanand.github.io/static/images/greetings.gif" align="center" style="width: 100%" />
 </div>
 
-### <div align="center">I'm Daniil, a web-developer 👨‍💻 working remotely since 2022 🚀</div>
+### <div align="center">I'm Daniil, a web-developer 👨‍💻 working remotely since 2021 🚀</div>
 
 - 🔭 I’m currently working on
 
