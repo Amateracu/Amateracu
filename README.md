@@ -4,10 +4,6 @@
 
 ### <div align="center">I'm Daniil, a web-developer 👨‍💻 working remotely since 2019 🚀</div>
 
-## My Skill Set
-
-<br/>
-
 ## Connect with me
 
 <a href="https://linkedin.com/in/danikdatskevich" target="_blank">
